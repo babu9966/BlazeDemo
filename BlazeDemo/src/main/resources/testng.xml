@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assessment" thread-count="3" parallel="classes">
+    <test name="Testing">
+        <classes>
+            <class name="BlazeDemoTests.Demo">
+                <methods>
+<!--                    <include name="VerifyHomePageTitleAndDestinationWeekPageURL"></include>-->
+                    <include name="ValidatePurchaseTicket">
+                        <parameter name="deptCity" value="Mexico City"></parameter>
+                        <parameter name="destCity" value="London"></parameter>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
